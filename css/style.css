@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #0066cc;
+    --primary-color: #003072;
     --secondary-color: #ffffff;
     --text-color: #333333;
     --light-gray: #f5f5f5;
@@ -2034,7 +2034,7 @@ h2 {
 
 /* Hero Section Styles */
 .hero-section {
-    background-color: #0066CC;
+    background-color: #003072;
     color: white;
     padding: 60px 0;
     min-height: 500px;
@@ -2159,7 +2159,7 @@ h2 {
 .intro-title {
     font-size: 45px;
     font-weight: 700;
-    color: #0066CC;
+    color: #003072;
     margin-bottom: 30px;
     line-height: 1.2;
     text-align: center;
@@ -2212,7 +2212,7 @@ h2 {
 .features-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #0066CC;
+    color: #003072;
     text-align: center;
     margin-bottom: 20px;
     line-height: normal;
@@ -2252,7 +2252,7 @@ h2 {
 
 .feature-icon i {
     font-size: 2rem;
-    color: #0066CC;
+    color: #003072;
 }
 
 .feature-card h3 {
@@ -2309,7 +2309,7 @@ h2 {
 .question-bank-section .section-title {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #0066CC;
+    color: #003072;
     text-align: center;
     margin-bottom: 20px;
     line-height: normal;

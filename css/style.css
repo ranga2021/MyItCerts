@@ -1054,7 +1054,7 @@ h2 {
 }
 
 .faq-section .section-title {
-    color: #0072CE;
+    color: var(--primary-color);
     font-size: 45px;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -1658,7 +1658,7 @@ h2 {
 
 
 .contact-form h2 {
-    color: #0077cc;
+    color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
@@ -1704,7 +1704,7 @@ h2 {
     padding: 15px;
     font-size: 1.1rem;
     margin-top: 10px;
-    background-color: #0077cc;
+    background-color: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -3026,7 +3026,7 @@ h2 {
 
 /* Quick Connect for Instant Support Section */
 .quick-connect-section .container-fluid {
-    background: #2563eb;
+    background: var(--primary-color);
     padding: 20px 0;
     margin: 0 40px;
     width: auto;
@@ -3143,7 +3143,7 @@ h2 {
     line-height: normal;
 }
 .contact-hero-title .highlight {
-    color: #2563eb;
+    color: var(--primary-color);
 }
 .contact-hero-subtitle {
     font-size: 1.25rem;
@@ -3209,7 +3209,7 @@ h2 {
     text-align: center;
     font-size: 2.3rem;
     font-weight: 800;
-    color: #0072CE;
+    color: var(--primary-color);
     margin-bottom: 40px;
 }
 .trust-cards {

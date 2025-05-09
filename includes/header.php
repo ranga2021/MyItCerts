@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OA Exams - Pass Your WGU Exams</title>
+    <title>My IT Certs - Pass Your IT Certification Exams</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/images/fav.png">
@@ -13,7 +13,7 @@
     <div class="top-banner">
         <div class="container-fluid">
             <i class="fas fa-graduation-cap"></i>
-            Pass Any WGU OA Exam Now & Pay After You Pass.<a href="contact.php" style="color:#fff; text-decoration:none;"> Contact Us!</a>
+            Pass Any IT Certification Exams Now & Pay After You Pass.  &nbsp<a href="contact.php" class="btn-important" style="text-decoration:none; padding: 3px 6px; border-radius:5px;">Contact Us!</a>
         </div>
     </div>
 
@@ -33,7 +33,7 @@
                 <a href="index.php">Home</a>
                 <a href="about.php">About Us</a>
                 <a href="exams.php">View all Exams</a>
-                <a href="https://onlinedegreeblog.com/" target="_blank">Study Guides</a>
+                <a href="https://www.youtube.com/@OAExams" target="_blank">Video Lessons</a>
                 <div class="mobile-only">
                     <div class="social-links">
                         <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>

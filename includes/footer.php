@@ -3,7 +3,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="images/Logo-footer.png" alt="OA Exams Logo">
-                    <p>With over five years of expertise, we have established ourselves as a trusted name in providing comprehensive support for OA exam support.</p>
+                    <p>With over five years of expertise, we have established ourselves as a trusted name in providing comprehensive support for IT Certification Exams.</p>
                 </div>
 
                 <div class="footer-links">
@@ -54,7 +54,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© Copyright 2025. All Rights Reserved by OA Exams.</p>
+                <p>© Copyright 2025. All Rights Reserved by My It Certs.</p>
             </div>
         </div>
     </footer>

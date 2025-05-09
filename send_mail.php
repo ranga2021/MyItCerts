@@ -7,12 +7,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $phone = trim($_POST['phone'] ?? '');
-    $program = trim($_POST['subject'] ?? '');
-    $class_code = trim($_POST['class_code'] ?? '');
+    $exam_vendor = trim($_POST['Exam'] ?? '');
+    $exam_name = trim($_POST['exam_name'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
     // Basic validation
-    if (!$name || !$email || !$phone || !$program || !$class_code || !$message) {
+    if (!$name || !$email || !$phone || !$exam_vendor || !$exam_name || !$message) {
         echo "<script>alert('Please fill in all required fields.'); window.history.back();</script>";
         exit;
     }
@@ -21,22 +21,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    $to = 'contact@collegeexceed.com';
-    $subject = "New Contact Form Submission from OAExams";
-    $body = "You have received a new message from the OAExams contact form.\n\n";
+    $to = 'brmcooray@gmail.com';
+    $subject = "New Contact Form Submission from My IT Certs";
+    $body = "You have received a new message from the My IT Certs contact form.\n\n";
     $body .= "Name: $name\n";
     $body .= "Email: $email\n";
     $body .= "Phone: $phone\n";
-    $body .= "Program: $program\n";
-    $body .= "Class Code: $class_code\n";
+    $body .= "Exam Vendor: $exam_vendor\n";
+    $body .= "Exam Name: $exam_name\n";
     $body .= "Message:\n$message\n";
     $headers = "From: OAExams <no-reply@oaexams.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "<script>alert('Thank you for your message. We will get back to you soon!'); window.location='contact.php';</script>";
+        // Return success response for AJAX
+        echo json_encode(['success' => true]);
     } else {
-        echo "<script>alert('There was an error sending your message. Please try again.'); window.history.back();</script>";
+        // Return error response for AJAX
+        echo json_encode(['success' => false, 'message' => 'There was an error sending your message. Please try again.']);
     }
 } else {
     header('Location: contact.php');

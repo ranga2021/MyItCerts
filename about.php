@@ -7,7 +7,7 @@
                 <div class="about-text2">
                     <span class="section-label">About us</span>
                     <h2>Who are we? What<br>do we get from this?</h2>
-                    <p>At OA Exams, we are committed to revolutionizing the way students approach their educational journeys. As trailblazers in exam preparation and academic support, we specialize in helping Western Governors University (WGU) students graduate quickly, affordably, and with confidence.</p>
+                    <p>At My IT Certs, we are committed to revolutionizing the way students approach their educational journeys. As trailblazers in exam preparation and academic support, we specialize in helping AWS, Cisco, Microsoft CompTIA, ISACA, Google, Salesforce, and more exams graduate quickly, affordably, and with confidence.</p>
                     <div class="about-buttons2">
                         <a href="contact.php" class="btn btn-primary">Contact Support</a>
                         <a href="exams.php" class="btn btn-outline">View all exams</a>
@@ -26,7 +26,8 @@
         <div class="container-fluid">
             <div class="benefits-header2 text-center">
                 <h2>Benefits of our <br>Premium Exam Support</h2>
-                <p>Guaranteed first-time passes. Pay only when you win. Finish your degree in 6 months.<br>This isn't help. It's a cheat code for WGU success</p>
+                <p>Guaranteed first-time passes. Pay only when you win. Finish your IT Certification exam in no time.
+                This isn't help. It's a cheat code for 100% success</p>
             </div>
 
             <div class="benefits-grid2">
@@ -35,7 +36,7 @@
                         <i class="fas fa-check"></i>
                     </div>
                     <h3>Guaranteed First-Time Pass</h3>
-                    <p>Pass your WGU exams on the first attempt without the need to spend countless hours studying. We streamline your preparation to focus only on what matters most.</p>
+                    <p>Pass your IT exams on the first attempt without the need to spend countless hours studying. We streamline your preparation to focus only on what matters most.</p>
                 </div>
 
                 <div class="benefit-card2">
@@ -50,16 +51,16 @@
                     <div class="benefit-icon2">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Comprehensive Performance Assessment Support</h3>
-                    <p>We offer expert assistance for all WGU performance assessments, guiding you through every step to ensure top results.</p>
+                    <h3>Comprehensive Performance Exam Support</h3>
+                    <p>We offer expert assistance for all IT Certification Exams, guiding you through every step to ensure top results.</p>
                 </div>
 
                 <div class="benefit-card2">
                     <div class="benefit-icon2">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Accelerated Degree Completion</h3>
-                    <p>We guarantee the completion of any WGU degree program within a single term (6 months). This means you'll save on fees for multiple terms by finishing your degree faster.</p>
+                    <h3>Accelerated Exam Completion</h3>
+                    <p>We guarantee the completion of any IT Certification Exams in no time. This means you'll save on fees for multiple terms by finishing your exam faster.</p>
                 </div>
             </div>
         </div>
@@ -69,25 +70,25 @@
     <section class="what-we-offer-section">
         <div class="container-fluid">
             <h2 class="text-center">What We Offer</h2>
-            <p class="text-center">We turn WGU chaos into clarity - crush exams with our guarantees, finish your degree in 6 months, and steal strategies from students who've already won. Your shortcut to graduation starts here.</p>
+            <p class="text-center">We provide comprehensive resources, expert guidance, and practice tools to help you confidently prepare for and pass your IT certification exams. Whether you're aiming for CompTIA, Cisco, Microsoft, or other credentials, we've got you covered.</p>
 
             <div class="offer-grid">
                 <div class="offer-card">
                     <div class="offer-icon">
                         <i class="fas fa-book-open"></i>
                     </div>
-                    <h3>Online Degree Support for WGU</h3>
-                    <p>Expert guidance and resources to help you complete your degree efficiently and effectively.</p>
-                    <a href="https://collegeexceed.com/" class="offer-link" target="_blank">VISIT OUR WEBSITE <i class="fas fa-arrow-right"></i></a>
+                    <h3>Study Guides</h3>
+                    <p>Expert guidance and resources to help you complete your exams efficiently and effectively.</p>
+                    <a href="exams.php" class="offer-link" target="_blank">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="offer-card">
                     <div class="offer-icon">
                         <i class="fas fa-newspaper"></i>
                     </div>
-                    <h3>Our Comprehensive Blog Series</h3>
-                    <p>In-depth articles and guides covering every aspect of WGU courses and exams.</p>
-                    <a href="https://onlinedegreeblog.com/" target="_blank" class="offer-link">READ OUR BLOG <i class="fas fa-arrow-right"></i></a>
+                    <h3>Practice Questions and Answers</h3>
+                    <p>We provide practice questions and answers covering every aspect of your IT Certification exam.</p>
+                    <a href="exams.php" target="_blank" class="offer-link">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="offer-card">
@@ -96,7 +97,7 @@
                     </div>
                     <h3>Exam Support and Guidance</h3>
                     <p>Personalized support to help you prepare and pass your exams with confidence.</p>
-                    <a href="https://studyexamsblog.com/" target="_blank" class="offer-link">GET STARTED <i class="fas fa-arrow-right"></i></a>
+                    <a href="contact.php" target="_blank" class="offer-link">CONTACT US <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -116,31 +117,31 @@
         <div class="container">
             <h2 class="section-title text-center">Get Every Single Answer Here</h2>
             <p class="section-description text-center">
-                Get answers fast. From 'How does your guarantee work?' to 'Can I really graduate in 6 months?'—we crush doubts so you can focus on crushing exams. 🚀
+            Find quick answers to all your common questions about our IT certification exams, study materials, and support services. Everything you need to know is right here!
             </p>
 
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What is OA Exams and how does it work?</h3>
+                        <h3>What is My IT Certs and how does it work?</h3>
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>We partner with <strong>College Exceed</strong> to help you achieve success in your WGU courses. College Exceed is a leading provider of exam support for online degree programs and IT certification programs. We help you pass your exams and assignments on the first attempt, guaranteed. You only pay us once you successfully pass your exam, ensuring your complete satisfaction and confidence.</p>
+                        <p>My IT Certs, in partnership with <strong>College Exceed,</strong> is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don’t pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What are the benefits of getting our premium exam support?</h3>
+                        <h3>What are the benefits of getting our premium IT certification exam support?</h3>
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">                    
                         <ul>
-                            <li>Guaranteed Exam Pass: Pass WGU exams on the first try with streamlined prep.</li>
-                            <li>Pay Upon Success: Only pay after you pass.</li>
-                            <li>Performance Assessment Help: Get expert support for WGU assessments.</li>
-                            <li>Fast Degree Completion: Finish your degree in one 6-month term. </li>
+                            <li>Guaranteed Exam Pass: Pass your IT certification exam on the first try with proven strategies and expert guidance.</li>
+                            <li>Pay After You Pass: You owe us nothing until you successfully pass your exam. </li>
+                            <li>Expert Coaching & Materials: Receive targeted support from IT-certified professionals.</li>
+                            <li>Accelerated Career Progress: Achieve your certification faster and start advancing your IT career sooner. </li>
                         </ul>
                     </div>
                 </div>
@@ -151,7 +152,8 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p><strong>We offer a 100% pass guarantee for our work.</strong> We also guarantee that our work is original, plagiarism-free and meets the standards of the OA exam. We respect your privacy and confidentiality, and we will never share your information or work with anyone else.</p>                      
+                        <p><strong>We offer a 100% pass guarantee.</strong> We also guarantee that all support and materials are original, customized to your certification exam, and completely free from plagiarism. Your privacy and confidentiality are our top priorities—we never share your personal information or exam support with third parties.
+                        </p>                      
                     </div>
                 </div>
 
@@ -161,7 +163,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>The cost of getting our exam support depends on the program you choose and the level of assistance you need. Once you contact us, we will give you a quote based on your situation. Remember, <strong>you only pay us once you successfully pass your exam,</strong> so there is no risk involved in partnering with us.</p>
+                        <p>Our pricing varies based on the certification exam and the level of support you need. Once you reach out to us, we’ll assess your goals and give you a personalized quote. <strong>You only pay after you pass your exam,</strong> so there’s zero financial risk involved in getting started with us.</p>
                     </div>
                 </div>
             </div>

@@ -180,14 +180,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add data-category attribute to course cards based on their content
     courseCards.forEach(card => {
         const courseTitle = card.querySelector('h4').textContent;
-        if (courseTitle.includes('Computer Architecture') || courseTitle.includes('Computer') || courseTitle.includes('Software')) {
-            card.setAttribute('data-category', 'Computer Science');
-        } else if (courseTitle.includes('Economics') || courseTitle.includes('Accounting') || courseTitle.includes('Management')) {
-            card.setAttribute('data-category', 'Business');
-        } else if (courseTitle.includes('Human Resource')) {
-            card.setAttribute('data-category', 'Social Science');
+        if (courseTitle.includes('AWS')) {
+            card.setAttribute('data-category', 'AWS');
+        } else if (courseTitle.includes('Cisco') ) {
+            card.setAttribute('data-category', 'Cisco');
+        } else if (courseTitle.includes('Microsoft')) {
+            card.setAttribute('data-category', 'Microsoft');
+        } else if (courseTitle.includes('CompTIA')) {
+            card.setAttribute('data-category', 'CompTIA');
+        } else if (courseTitle.includes('ISACA')) {
+            card.setAttribute('data-category', 'ISACA');
+        } else if (courseTitle.includes('Google')) {
+            card.setAttribute('data-category', 'Google');
+        } else if (courseTitle.includes('Salesforce')) {
+            card.setAttribute('data-category', 'Salesforce');
+        } else if (courseTitle.includes('ECCouncil')) {
+            card.setAttribute('data-category', 'ECCouncil');
+        } else if (courseTitle.includes('Palo Alto')) {
+            card.setAttribute('data-category', 'Palo Alto');
         } else {
-            card.setAttribute('data-category', 'Business'); // Default category
+            card.setAttribute('data-category', 'AWS'); // Default category
         }
     });
 

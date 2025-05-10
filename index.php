@@ -145,6 +145,11 @@
                     </div>
                 </div>
             </div>
+            <div class="view-more-container text-center">
+                <a href="exams.php" class="btn btn-primary view-more-btn">
+                    View All Exams <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>

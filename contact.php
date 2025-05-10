@@ -59,7 +59,7 @@
             <div class="trust-card">
                 <div class="trust-icon trust-icon-risk"><i class="fas fa-wallet"></i></div>
                 <h3>Risk Free</h3>
-                <p>Only pay after you successfully pass your OA</p>
+                <p>Only pay after you successfully pass your exam</p>
             </div>
         </div>
     </div>
@@ -220,7 +220,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>My IT Certs, in partnership with <strong>College Exceed,</strong> is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
+                        <p>My IT Certs is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
                     </div>
                 </div>
 
@@ -245,7 +245,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p><strong>We offer a 100% pass guarantee.</strong> We also guarantee that all support and materials are original, customized to your certification exam, and completely free from plagiarism. Your privacy and confidentiality are our top priorities—we never share your personal information or exam support with third parties.
+                        <p>We've been in this business since 2017, supporting over 20 exams every single day. What sets us apart? You only pay after you pass your exam & no upfront fees, no risks. That’s our commitment and your guarantee.
                         </p>                      
                     </div>
                 </div>

@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/images/fav.png">
+    <style>
+        .top-banner .container-fluid{
+            animation: slideDown 0.8s ease-out forwards;
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Top Banner -->
     <div class="top-banner">
         <div class="container-fluid">
             <i class="fas fa-graduation-cap"></i>
-            Pass Any IT Certification Exams Now & Pay After You Pass.  &nbsp<a href="contact.php" class="btn-important" style="text-decoration:none; padding: 3px 6px; border-radius:5px;">Contact Us!</a>
+            Pass Any IT Certification Exam Now & Pay After You Pass.  &nbsp<a href="contact.php" class="btn-important" style="text-decoration:none; padding: 3px 6px; border-radius:5px;">Contact Us!</a>
         </div>
     </div>
 

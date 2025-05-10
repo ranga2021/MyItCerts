@@ -37,6 +37,10 @@
                     <h3>Categories</h3>
                     <ul class="category-list">
                         <li>
+                            <i class="fas fa-desktop"></i>
+                            <span>CompTIA</span>
+                        </li>
+                        <li>
                             <i class="fas fa-server"></i>
                             <span>AWS</span>
                         </li>
@@ -47,10 +51,6 @@
                         <li>
                             <i class="fas fa-book"></i>
                             <span>Microsoft</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-desktop"></i>
-                            <span>CompTIA</span>
                         </li>
                         <li>
                             <i class="fas fa-database"></i>
@@ -83,7 +83,19 @@
 
                 <!-- Exams Grid -->
                 <div class="exams-grid">
-                    <!-- Exam Card 1 -->
+
+                    <div class="exam-card">
+                        <div class="exam-image">
+                            <img src="images/exams/sample.png" alt="CompTIA A+">
+                            <div class="exam-label">Certification</div>
+                        </div>
+                        <div class="exam-content">
+                            <h3>CompTIA A+ Certification Exam: Core 1 (220-1101)</h3>
+                            <p>Start your IT career with our A+ study materials. Learn essential IT skills and prepare for your certification.</p>
+                            <a href="https://comptia.myitcerts.com/" class="view-guide">View Exam Guide <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
                     <div class="exam-card">
                         <div class="exam-image">
                             <img src="images/exams/sample.png" alt="AWS Solutions Architect">
@@ -180,19 +192,7 @@
                             <p>Learn AI fundamentals with our Azure AI study materials. Start your AI journey with Microsoft certification.</p>
                             <a href="coming-soon.php" class="view-guide">View Exam Guide <i class="fas fa-arrow-right"></i></a>
                         </div>
-                    </div>
-
-                    <div class="exam-card">
-                        <div class="exam-image">
-                            <img src="images/exams/sample.png" alt="CompTIA A+">
-                            <div class="exam-label">Certification</div>
-                        </div>
-                        <div class="exam-content">
-                            <h3>CompTIA A+ Certification Exam: Core 1 (220-1101)</h3>
-                            <p>Start your IT career with our A+ study materials. Learn essential IT skills and prepare for your certification.</p>
-                            <a href="https://comptia.myitcerts.com/" class="view-guide">View Exam Guide <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    </div>                
 
                     <div class="exam-card">
                         <div class="exam-image">

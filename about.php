@@ -26,7 +26,7 @@
         <div class="container-fluid">
             <div class="benefits-header2 text-center">
                 <h2>Benefits of our <br>Premium Exam Support</h2>
-                <p>Guaranteed first-time passes. Pay only when you win. Finish your IT Certification exam in no time.
+                <p>Guaranteed first-time pass. Pay only after you see the results. Finish your IT Certification exam in no time.
                 This isn't help. It's a cheat code for 100% success</p>
             </div>
 
@@ -51,16 +51,17 @@
                     <div class="benefit-icon2">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Comprehensive Performance Exam Support</h3>
-                    <p>We offer expert assistance for all IT Certification Exams, guiding you through every step to ensure top results.</p>
+                    <h3>Pass Any Exam within 24H </h3>
+                    <p>We guarantee the completion of any Certification Exam within a day. This means less time studying, more time living!
+                    </p>
                 </div>
 
                 <div class="benefit-card2">
                     <div class="benefit-icon2">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Accelerated Exam Completion</h3>
-                    <p>We guarantee the completion of any IT Certification Exams in no time. This means you'll save on fees for multiple terms by finishing your exam faster.</p>
+                    <h3>Stress-Free Exam Process</h3>
+                    <p>Pick your preferred date, let our agent handle the setup, and just be ready on exam day. It’s that easy!</p>
                 </div>
             </div>
         </div>
@@ -127,7 +128,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>My IT Certs, in partnership with <strong>College Exceed,</strong> is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don’t pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
+                        <p>My IT Certs is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don’t pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
                     </div>
                 </div>
 
@@ -152,7 +153,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p><strong>We offer a 100% pass guarantee.</strong> We also guarantee that all support and materials are original, customized to your certification exam, and completely free from plagiarism. Your privacy and confidentiality are our top priorities—we never share your personal information or exam support with third parties.
+                        <p>We've been in this business since 2017, supporting over 20 exams every single day. What sets us apart? You only pay after you pass your exam & no upfront fees, no risks. That’s our commitment and your guarantee.
                         </p>                      
                     </div>
                 </div>

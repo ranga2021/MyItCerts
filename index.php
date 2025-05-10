@@ -4,7 +4,7 @@
     <section class="hero">
         <div class="container-fluid">
             <div class="hero-content main-hero-content">
-                <h1>Pass Any Exam Now & Pay After You Pass</h1>
+                <h1>Pass Your IT Certification Exams On The First Attempt</h1>
                 <p>Join thousands of successful students who achieved their goals with our comprehensive exam preparation materials.</p>
                 
                 <div class="stats-container">
@@ -63,10 +63,10 @@
                     <div class="category-list-container">
                         <h3>Categories</h3>
                         <ul class="category-list">
+                            <li><i class="fas fa-desktop"></i>CompTIA</li>
                             <li><i class="fas fa-server"></i>AWS</li>
                             <li><i class="fas fa-laptop-code"></i> Cisco</li>
-                            <li><i class="fas fa-book"></i> Microsoft</li>
-                            <li><i class="fas fa-desktop"></i>CompTIA</li>
+                            <li><i class="fas fa-book"></i> Microsoft</li>                           
                             <li><i class="fas fa-database"></i> ISACA</li>
                             <li><i class="fas fa-calculator"></i>Google</li>
                             <li><i class="fas fa-briefcase"></i>Salesforce</li>
@@ -83,6 +83,10 @@
                 </div>
 
                 <div class="courses-grid">
+                    <div class="course-card">
+                        <h4>CompTIA A+ Certification Exam: Core 1 (220-1101)</h4>
+                        <a href="https://comptia.myitcerts.com/" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
+                    </div>
                     <div class="course-card">
                         <h4>AWS Certified Solutions Architect – Associate (SAA-C03)</h4>
                         <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
@@ -114,10 +118,6 @@
                     <div class="course-card">
                         <h4>AI-900: Microsoft Azure AI Fundamentals</h4>
                         <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>CompTIA A+ Certification Exam: Core 1 (220-1101)</h4>
-                        <a href="https://comptia.myitcerts.com/" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
                     </div>
                     <div class="course-card">
                         <h4>Certified Information Security Manager (CISM) - ISACA</h4>
@@ -180,7 +180,7 @@
                 Benefits of our <br>Premium Exam Support
             </h2>
             <p class="premium-benefits-subtitle">
-                Guaranteed first-time passes. Pay only when you win. Finish your IT Certification exam in no time.<br>
+                Guaranteed first-time pass. Pay only after you see the results. Finish your IT Certification exam in no time.<br>
                 This isn't help. It's a cheat code for 100% success
             </p>
             <div class="premium-benefits-grid">
@@ -196,13 +196,13 @@
                 </div>
                 <div class="premium-benefit-card">
                     <div class="premium-benefit-icon"><i class="fas fa-users"></i></div>
-                    <h3>Comprehensive Performance Exam Support</h3>
-                    <p>We offer expert assistance for all IT Certification Exams, guiding you through every step to ensure top results.</p>
+                    <h3>Pass Any Exam within 24H</h3>
+                    <p>We guarantee the completion of any Certification Exam within a day. This means less time studying, more time living!</p>
                 </div>
                 <div class="premium-benefit-card">
                     <div class="premium-benefit-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Accelerated Exam Completion</h3>
-                    <p>We guarantee the completion of any IT Certification Exams in no time. This means you'll save on fees for multiple terms by finishing your exam faster.</p>
+                    <h3>Stress-Free Exam Process</h3>
+                    <p>Pick your preferred date, let our agent handle the setup, and just be ready on exam day. It’s that easy!</p>
                 </div>
             </div>
         </div>
@@ -372,7 +372,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>My IT Certs, in partnership with <strong>College Exceed,</strong> is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
+                        <p>My IT Certs is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
                     </div>
                 </div>
 
@@ -398,7 +398,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p><strong>We offer a 100% pass guarantee.</strong> We also guarantee that all support and materials are original, customized to your certification exam, and completely free from plagiarism. Your privacy and confidentiality are our top priorities—we never share your personal information or exam support with third parties.
+                        <p>We've been in this business since 2017, supporting over 20 exams every single day. What sets us apart? You only pay after you pass your exam & no upfront fees, no risks. That’s our commitment and your guarantee.
                         </p>                      
                     </div>
                 </div>

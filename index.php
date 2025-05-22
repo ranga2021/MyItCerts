@@ -179,7 +179,7 @@
     </section>
 
     <!-- Premium Benefits Section -->
-    <section class="premium-benefits-section">
+    <section class="premium-benefits-section" >
         <div class="container-fluid premium-benefits-container">
             <h2 class="premium-benefits-title">
                 Benefits of our <br>Premium Exam Support

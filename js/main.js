@@ -12,9 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Smooth scroll for navigation links
+    // Smooth scroll for navigation links (desktop only)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            // On mobile, use default behavior to prevent auto-scroll issues
+            if (window.innerWidth <= 992) {
+                return; // Let browser handle it naturally
+            }
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -79,40 +83,53 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateDimensions() {
         const gap = 30;
         const cardStyle = window.getComputedStyle(cards[0]);
-        const cardMargin = parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
-        cardWidth = cards[0].offsetWidth + gap + cardMargin;
+        cardWidth = cards[0].offsetWidth + gap;
         
         // Calculate how many cards to show based on viewport width
         const viewportWidth = window.innerWidth;
         const cardsToShow = viewportWidth >= 1200 ? 3 : viewportWidth >= 768 ? 2 : 1;
         maxIndex = cards.length;
 
-        // Initial position to show first real slide
+        // Set initial position
         track.style.transform = `translateX(-${cardWidth}px)`;
+        
+        // Ensure smooth transition
+        track.style.transition = 'none';
+        requestAnimationFrame(() => {
+            track.style.transition = 'transform 0.5s ease-in-out';
+        });
     }
 
     function updateCarousel(transition = true) {
         if (!cardWidth) calculateDimensions();
         
-        track.style.transition = transition ? 'transform 0.3s ease-in-out' : 'none';
-        const translateX = -(currentIndex + 1) * cardWidth; // +1 for the cloned slide
+        if (transition) {
+            track.style.transition = 'transform 0.5s ease-in-out';
+        } else {
+            track.style.transition = 'none';
+        }
+        
+        const translateX = -(currentIndex + 1) * cardWidth;
         track.style.transform = `translateX(${translateX}px)`;
     }
 
     function handleTransitionEnd() {
         if (isTransitioning) {
             isTransitioning = false;
-            track.style.transition = 'none';
             
             // If we're at the clone of the last slide, jump to the real last slide
             if (currentIndex === -1) {
                 currentIndex = cards.length - 1;
-                updateCarousel(false);
+                requestAnimationFrame(() => {
+                    updateCarousel(false);
+                });
             }
             // If we're at the clone of the first slide, jump to the real first slide
             else if (currentIndex === cards.length) {
                 currentIndex = 0;
-                updateCarousel(false);
+                requestAnimationFrame(() => {
+                    updateCarousel(false);
+                });
             }
         }
     }
@@ -174,171 +191,167 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { passive: true });
 
     // Course Category Filter functionality
-    const categoryList = document.querySelectorAll('.category-list li');
-    const courseCards = document.querySelectorAll('.course-card');
+    const categoryList = document.querySelectorAll('.courses-section .category-list li');
+    const courseCardLinks = document.querySelectorAll('.course-card-link');
+    const coursesGrid = document.querySelector('.courses-grid');
+    const maxVisibleCards = 15;
 
-    // Add data-category attribute to course cards based on their content
-    courseCards.forEach(card => {
-        const courseTitle = card.querySelector('h4').textContent;
-        if (courseTitle.includes('AWS')) {
-            card.setAttribute('data-category', 'AWS');
-        } else if (courseTitle.includes('Cisco') ) {
-            card.setAttribute('data-category', 'Cisco');
-        } else if (courseTitle.includes('Microsoft')) {
-            card.setAttribute('data-category', 'Microsoft');
-        } else if (courseTitle.includes('CompTIA')) {
-            card.setAttribute('data-category', 'CompTIA');
-        } else if (courseTitle.includes('ISACA')) {
-            card.setAttribute('data-category', 'ISACA');
-        } else if (courseTitle.includes('Google')) {
-            card.setAttribute('data-category', 'Google');
-        } else if (courseTitle.includes('Salesforce')) {
-            card.setAttribute('data-category', 'Salesforce');
-        } else if (courseTitle.includes('ECCouncil')) {
-            card.setAttribute('data-category', 'ECCouncil');
-        } else if (courseTitle.includes('Palo Alto')) {
-            card.setAttribute('data-category', 'Palo Alto');
-        } else {
-            card.setAttribute('data-category', 'AWS'); // Default category
-        }
-    });
-
-    // Add click event listeners to category items
     categoryList.forEach(category => {
-        category.addEventListener('click', () => {
-            const selectedCategory = category.textContent.trim();
+        category.addEventListener('click', function() {
+            const selectedCategory = this.textContent.trim();
             
             // Remove active class from all categories
             categoryList.forEach(cat => cat.classList.remove('active'));
             // Add active class to selected category
-            category.classList.add('active');
+            this.classList.add('active');
             
-            // Filter course cards
-            courseCards.forEach(card => {
+            // Filter cards based on category
+            let visibleCount = 0;
+            courseCardLinks.forEach(link => {
+                const card = link.querySelector('.course-card');
+                if (!card) return;
+                
                 const cardCategory = card.getAttribute('data-category');
                 if (selectedCategory === 'All' || cardCategory === selectedCategory) {
-                    card.style.display = 'block';
+                    if (visibleCount < maxVisibleCards) {
+                        link.classList.remove('hidden');
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        link.classList.add('hidden');
+                        card.classList.add('hidden');
+                    }
                 } else {
-                    card.style.display = 'none';
+                    link.classList.add('hidden');
+                    card.classList.add('hidden');
                 }
             });
+
+            // If no cards are visible, show a message
+            if (visibleCount === 0) {
+                const existingNoResults = coursesGrid.querySelector('.no-results');
+                if (!existingNoResults) {
+                const noResults = document.createElement('div');
+                noResults.className = 'no-results';
+                noResults.textContent = 'No exams found for this category.';
+                coursesGrid.appendChild(noResults);
+                }
+            } else {
+                // Remove any existing no-results message
+                const existingNoResults = coursesGrid.querySelector('.no-results');
+                if (existingNoResults) {
+                    existingNoResults.remove();
+                }
+            }
         });
     });
 
     // Exam Category Filter functionality
-    console.log('Categories:', document.querySelectorAll('.exams-listing-section .category-list li').length);
-    console.log('Exam cards:', document.querySelectorAll('.exams-listing-section .exam-card').length);
-    
     const examCategoryList = document.querySelectorAll('.exams-listing-section .category-list li');
     const examCards = document.querySelectorAll('.exams-listing-section .exam-card');
-    
-    console.log('Category items found:', examCategoryList.length);
-    console.log('Exam cards found:', examCards.length);
-
-    // Add data-category attribute to exam cards based on their content
-    examCards.forEach(card => {
-        const examTitle = card.querySelector('.exam-content h3').textContent;
-        console.log('Exam title:', examTitle);
-        
-        if (examTitle.includes('Computer') || examTitle.includes('Software') || examTitle.includes('Architecture')) {
-            card.setAttribute('data-category', 'Computer Science');
-        } else if (examTitle.includes('Economics') || examTitle.includes('Accounting') || examTitle.includes('Management')) {
-            card.setAttribute('data-category', 'Business');
-        } else if (examTitle.includes('Human Resource')) {
-            card.setAttribute('data-category', 'Social Science');
-        } else if (examTitle.includes('Data-Driven')) {
-            card.setAttribute('data-category', 'Business');
-        } else {
-            card.setAttribute('data-category', 'Business'); // Default category
-        }
-        console.log('Category assigned:', card.getAttribute('data-category'));
-    });
+    const examsGrid = document.querySelector('.exams-listing-section .exams-grid');
 
     // Add click event listeners to category items
     examCategoryList.forEach(category => {
         category.addEventListener('click', () => {
-            console.log('Category clicked');
             const selectedCategory = category.querySelector('span').textContent.trim();
-            console.log('Selected category:', selectedCategory);
             
             // Remove active class from all categories
             examCategoryList.forEach(cat => cat.classList.remove('active'));
             // Add active class to selected category
             category.classList.add('active');
             
-            // Filter exam cards
+            // Filter exam cards - use existing data-category attribute
             examCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
-                console.log('Card category:', cardCategory);
                 if (selectedCategory === 'All' || cardCategory === selectedCategory) {
-                    card.style.display = 'block';
+                    card.classList.remove('hidden');
                 } else {
-                    card.style.display = 'none';
+                    card.classList.add('hidden');
                 }
             });
         });
     });
 
+    // Mobile Menu Toggle
     var menuToggle = document.querySelector('.menu-toggle');
     var navbar = document.querySelector('.navbar');
+    var navLinks = document.querySelectorAll('.nav-links a');
+    
     if (menuToggle && navbar) {
-        menuToggle.addEventListener('click', function() {
+        function toggleMenu() {
             navbar.classList.toggle('active');
-            // Toggle between bars and close icons
-            const barsIcon = menuToggle.querySelector('.fa-bars');
-            const closeIcon = menuToggle.querySelector('.fa-times');
-            const isActive = navbar.classList.contains('active');
-            barsIcon.style.display = isActive ? 'none' : 'block';
-            closeIcon.style.display = isActive ? 'block' : 'none';
+            
+            // Toggle icons
+            var barsIcon = menuToggle.querySelector('.fa-bars');
+            var closeIcon = menuToggle.querySelector('.fa-times');
+            var isActive = navbar.classList.contains('active');
+            
+            if (barsIcon) barsIcon.style.display = isActive ? 'none' : 'block';
+            if (closeIcon) closeIcon.style.display = isActive ? 'block' : 'none';
+            
+            // Prevent body scroll when menu is open
+            if (isActive && window.innerWidth <= 992) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        // Toggle menu on button click
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (navbar.classList.contains('active') && 
+                !navbar.contains(e.target) && 
+                !menuToggle.contains(e.target) &&
+                window.innerWidth <= 992) {
+                toggleMenu();
+            }
+        });
+        
+        // Close menu when clicking nav links
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 992 && navbar.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
         });
     }
 
-    // Hero Carousel
+    // Hero Slider with Fade Transition
     const heroSlides = document.querySelectorAll('.hero-slide');
-    const heroPrevButton = document.querySelector('.hero-arrow.prev');
-    const heroNextButton = document.querySelector('.hero-arrow.next');
-    let currentHeroSlide = 0;
-    let heroInterval;
-
-    function showHeroSlide(index) {
-        heroSlides.forEach(slide => slide.classList.remove('active'));
-        heroSlides[index].classList.add('active');
-    }
-
-    function nextHeroSlide() {
-        currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
-        showHeroSlide(currentHeroSlide);
-    }
-
-    function prevHeroSlide() {
-        currentHeroSlide = (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
-        showHeroSlide(currentHeroSlide);
-    }
-
-    // Set up automatic sliding
-    function startHeroInterval() {
-        heroInterval = setInterval(nextHeroSlide, 3000);
-    }
-
-    // Add click event listeners for manual navigation
-    if (heroPrevButton && heroNextButton) {
-        heroPrevButton.addEventListener('click', () => {
-            clearInterval(heroInterval);
-            prevHeroSlide();
-            startHeroInterval();
-        });
-
-        heroNextButton.addEventListener('click', () => {
-            clearInterval(heroInterval);
-            nextHeroSlide();
-            startHeroInterval();
-        });
-    }
-
-    // Initialize the first slide and start automatic sliding
+    let currentSlide = 0;
+    
     if (heroSlides.length > 0) {
-        showHeroSlide(0);
-        startHeroInterval();
+        function showSlide(index) {
+            // Remove active class from all slides
+            heroSlides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+        
+            // Add active class to current slide
+            if (heroSlides[index]) {
+                heroSlides[index].classList.add('active');
+            }
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % heroSlides.length;
+            showSlide(currentSlide);
+            }
+        
+        // Auto-advance slides every 4 seconds
+        setInterval(nextSlide, 4000);
+        
+        // Initialize first slide
+        showSlide(0);
     }
 
     // Stats Countdown Animation
@@ -391,19 +404,57 @@ let navbar = document.querySelector('.navbar');
 let topBanner = document.querySelector('.top-banner');
 let lastScrollTop = 0;
 
-window.addEventListener('scroll', function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop && scrollTop > topBanner.offsetHeight) {
-        navbar.style.position = 'fixed';
-        navbar.style.top = '0';
-        navbar.style.width = '100%';
-        navbar.style.zIndex = '1000';
-        document.body.style.paddingTop = navbar.offsetHeight + 'px';
-    } else if (scrollTop < lastScrollTop && scrollTop <= topBanner.offsetHeight) {
-        navbar.style.position = 'static';
-        document.body.style.paddingTop = '0';
-    }
-    
-    lastScrollTop = scrollTop;
-}); 
+// Only run sticky nav logic if elements exist
+if (navbar && topBanner) {
+    window.addEventListener('scroll', function() {
+        // FIX: Do NOT run this logic on mobile/tablet (<= 992px)
+        // Your CSS already handles the fixed header for mobile (style.css line 111-135)
+        if (window.innerWidth <= 992) {
+            return; 
+        }
+        
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > (topBanner.offsetHeight || 50)) {
+            // Make both navbar and top banner fixed
+            if (topBanner) {
+                topBanner.style.position = 'fixed';
+                topBanner.style.top = '0';
+                topBanner.style.width = '100%';
+                topBanner.style.zIndex = '1001';
+            }
+            
+            if (navbar) {
+                navbar.style.position = 'fixed';
+                navbar.style.top = (topBanner ? topBanner.offsetHeight : 0) + 'px';
+                navbar.style.width = '100%';
+                navbar.style.maxWidth = '100%';
+                navbar.style.zIndex = '1000';
+            }
+            
+            // Use requestAnimationFrame to prevent layout shift
+            requestAnimationFrame(function() {
+                const navHeight = navbar ? navbar.offsetHeight : 0;
+                const bannerHeight = topBanner ? topBanner.offsetHeight : 0;
+                document.body.style.paddingTop = (navHeight + bannerHeight) + 'px';
+            });
+        } else if (scrollTop <= (topBanner ? topBanner.offsetHeight : 50)) {
+            // Reset both navbar and top banner
+            if (topBanner) {
+                topBanner.style.position = 'static';
+            }
+            if (navbar) {
+                navbar.style.position = 'static';
+                navbar.style.width = '';
+                navbar.style.maxWidth = '';
+            }
+            
+            // Use requestAnimationFrame to prevent layout shift
+            requestAnimationFrame(function() {
+                document.body.style.paddingTop = '0';
+            });
+        }
+        
+        lastScrollTop = scrollTop;
+    }, { passive: true });
+}

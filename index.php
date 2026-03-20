@@ -4,8 +4,8 @@
     <section class="hero">
         <div class="container-fluid">
             <div class="hero-content main-hero-content">
-                <h1>Pass Your IT Certification Exams On The First Attempt</h1>
-                <p>Join thousands of successful students who achieved their goals with our comprehensive exam preparation materials.</p>
+                <h1>Pass Your AI Exams on First Attempt</h1>
+                <p>Expand Your AI Expertise with Confidence - Building on our proven track record of helping worldwide students and certification candidates succeed.</p>
                 
                 <div class="stats-container">
                     <div class="stat-box">
@@ -23,28 +23,23 @@
                 </div>
 
                 <div class="search-box">
-                    <input type="text" placeholder="Search for your exam (ex. Comptia+, PMP, etc.)">
+                    <input type="text" placeholder="Search for your exam (ex. Microsoft, PMP, etc.)">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </div>
-            <div class="hero-carousel">
-                <div class="hero-slides">
+            <div class="hero-image-container">
+                <div class="hero-slider">
                     <div class="hero-slide active">
-                        <img src="images/1.png" alt="Happy students studying">
+                        <img src="images/1.jpg" alt="AI Certification Support">
                     </div>
                     <div class="hero-slide">
-                        <img src="images/3.jpg" alt="College exceed">
+                        <img src="images/3.jpg" alt="AI Certification Support">
                     </div>
                     <div class="hero-slide">
-                        <img src="images/4.jpg" alt="College exceed">
+                        <img src="images/4.jpg" alt="AI Certification Support">
                     </div>
+
                 </div>
-                <button class="hero-arrow prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="hero-arrow next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -53,8 +48,9 @@
     <section class="courses-section">
         <div class="container-fluid">
             <div class="section-header text-center">
-                <h2>Struggling to prep for<br>high-demand IT Certification exams?</h2>
-                <p>You're not alone. Discover why <span class="text-primary">thousands rely</span> on our proven strategies to slash<br>study time, crush test anxiety, and walk into exams ready to dominate.</p>
+                <h2>Struggling to prep for<br>
+                high-demand AI exams?</h2>
+                <p>You're not alone. Discover why <span class="text-primary">thousands rely</span><br> on our proven strategies to slash study time, crush test anxiety, and walk into exams ready to dominate.</p>
                 <p class="subtitle">Get the exact tools top performers use to pass faster!</p>
             </div>
 
@@ -63,97 +59,141 @@
                     <div class="category-list-container">
                         <h3>Categories</h3>
                         <ul class="category-list">
-                            <li><i class="fas fa-desktop"></i>CompTIA</li>
-                            <li><i class="fas fa-server"></i>AWS</li>
-                            <li><i class="fas fa-laptop-code"></i> Cisco</li>
-                            <li><i class="fas fa-book"></i> Microsoft</li>                           
-                            <li><i class="fas fa-database"></i> ISACA</li>
-                            <li><i class="fas fa-calculator"></i>Google</li>
-                            <li><i class="fas fa-briefcase"></i>Salesforce</li>
-                            <li><i class="fas fa-book-open"></i>ECCouncil</li>
-                            <li><i class="fas fa-file"></i>Palo Alto</li>
+                            <li class="active"><i class="fas fa-th-large"></i>All</li>
+                            <li><i class="fas fa-book"></i>Microsoft AI</li>
+                            <li><i class="fas fa-server"></i>AWS AI</li>
+                            <li><i class="fas fa-calculator"></i>Google AI</li>
+                            <li><i class="fas fa-database"></i>ISACA AI</li>
+                            <li><i class="fas fa-microchip"></i>NVIDIA AI</li>
+                            <li><i class="fas fa-check-circle"></i>ISTQB AI Testing</li>
+                            <li><i class="fas fa-briefcase"></i>PMI AI</li>
                         </ul>
                     </div>
 
                     <div class="help-box">
                         <h4>Need Help?</h4>
                         <p>Our study experts are ready to assist you</p>
-                        <a href="contact.php" class="contact-support-btn">Contact Support</a>
+                        <a href="contact" class="contact-support-btn">Contact Support</a>
                     </div>
                 </div>
 
                 <div class="courses-grid">
-                    <div class="course-card">
-                        <h4>CompTIA A+ Certification Exam: Core 1 (220-1101)</h4>
-                        <a href="https://comptia.myitcerts.com/" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>AWS Certified Solutions Architect – Associate (SAA-C03)</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Cisco Certified Network Associate (CCNA) – 200-301 </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>AI-102: Designing and Implementing a Microsoft Azure AI Solution </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>CompTIA Security+ (SY0-701)</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Certified Information Systems Auditor (CISA) - ISACA</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>AWS Certified Cloud Practitioner (CLF-C02)</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Cisco Certified Network Professional Enterprise (CCNP Enterprise) – 350-401 ENCOR</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>AI-900: Microsoft Azure AI Fundamentals</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Certified Information Security Manager (CISM) - ISACA</h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Associate Cloud Engineer - Google </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>Certified AI Associate - Salesforce </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>312-50v12: Certified Ethical Hacker v12 Exam - ECCouncil </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>PCNSA: Palo Alto Networks Certified Network Security Administrator </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="course-card">
-                        <h4>AWS Certified Developer – Associate (DVA-C02) </h4>
-                        <a href="coming-soon.php" class="view-guide-btn">View Exam Guide <i class="fas fa-chevron-right"></i></a>
-                    </div>
+                    <!-- Microsoft AI Certifications -->
+                    <a href="AI900" class="course-card-link">
+                        <div class="course-card" data-category="Microsoft AI">
+                            <h4>AI-900 - Microsoft Certified: Azure AI Fundamentals</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="AI102.php" class="course-card-link">
+                        <div class="course-card" data-category="Microsoft AI">
+                            <h4>AI-102 - Microsoft Certified: Azure AI Engineer Associate</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                     <!-- ISACA AI Certifications -->
+                     <a href="AAIA" class="course-card-link">
+                        <div class="course-card" data-category="ISACA AI">
+                            <h4>AAIA - ISACA Advanced in AI Audit</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- AWS AI Certifications -->
+                    <a href="AIF-C01" class="course-card-link">
+                        <div class="course-card" data-category="AWS AI">
+                            <h4>AIF-C01 - AWS Certified AI Practitioner</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="GDP-C01" class="course-card-link">
+                        <div class="course-card" data-category="AWS AI">
+                            <h4>GDP-C01 - AWS Certified Generative AI Developer - Professional</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Google AI Certification -->
+                    <a href="coming-soon" class="course-card-link">
+                        <div class="course-card" data-category="Google AI">
+                            <h4>GenAI - Generative AI Leader</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                   
+                    <a href="AAISM" class="course-card-link">
+                        <div class="course-card" data-category="ISACA AI">
+                            <h4>AAISM - ISACA Advanced in AI Security Management</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- NVIDIA AI Certifications -->
+                    <a href="AI-LLMS" class="course-card-link">
+                        <div class="course-card" data-category="NVIDIA AI">
+                            <h4>NCA-GENL - NVIDIA-Certified Associate: Generative AI LLMs</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="NCA-AIIO" class="course-card-link">
+                        <div class="course-card" data-category="NVIDIA AI">
+                            <h4>NCA-AIIO - NVIDIA-Certified Associate: AI Infrastructure and Operations</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="coming-soon" class="course-card-link">
+                        <div class="course-card" data-category="NVIDIA AI">
+                            <h4>NCA-GENM - NVIDIA-Certified Associate: Multimodal Generative AI</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- ISTQB AI Testing -->
+                    <a href="CT-AI" class="course-card-link">
+                        <div class="course-card" data-category="ISTQB AI Testing">
+                            <h4>CT-AI - ISTQB Certified Tester AI Testing</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- PMI AI Certification -->
+                    <a href="PMI-CPMAI" class="course-card-link">
+                        <div class="course-card" data-category="PMI AI">
+                            <h4>PMI-CPMAI - PMI Certified Professional in Managing AI</h4>
+                            <div class="exam-info-row">
+                                <span class="view-exam-guide">View Exam Guide <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="view-more-container text-center">
-                <a href="exams.php" class="btn btn-primary view-more-btn">
-                    View All Exams <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>
-                <a href="contact.php" class="contact-support-btn">Contact Support</a>
+                <a href="contact" class="contact-support-btn">Contact Support</a>
             </div>
         </div>
     </section>
@@ -162,17 +202,17 @@
     <section class="about-section">
         <div class="container-fluid">
             <div class="about-content">
-                <div class="about-text">
+                    <div class="about-text">
                     <span class="section-label">About us</span>
-                    <h2>Who are we? What<br>do we get from this?</h2>
-                    <p>At My IT Certs, we are committed to revolutionizing the way students approach their educational journeys. As trailblazers in exam preparation and academic support, we specialize in helping AWS, Cisco, Microsoft CompTIA, ISACA, Google, Salesforce, and more exams graduate quickly, affordably, and with confidence.</p>
+                    <h2>Pass Your AI Exams on First Attempt</h2>
+                    <p>Building on our proven track record of helping WGU students and certification candidates succeed, we're excited to announce comprehensive support for industry-leading AI certification exams! We specialize in Microsoft AI, AWS AI, Google AI, ISACA AI, NVIDIA AI, ISTQB AI Testing, and PMI AI certifications with expert support and competitive pricing.</p>
                     <div class="about-buttons">
-                        <a href="about.php" class="btn btn-primary">About us</a>
-                        <a href="exams.php" class="btn btn-outline">View all exams</a>
+                        <a href="about" class="btn btn-primary">About us</a>
+                        <a href="exams" class="btn btn-outline">View AI Certifications</a>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/2.png" alt="Happy students studying together">
+                    <img src="images/5.jpg" alt="Happy students studying together">
                 </div>
             </div>
         </div>
@@ -182,17 +222,21 @@
     <section class="premium-benefits-section" >
         <div class="container-fluid premium-benefits-container">
             <h2 class="premium-benefits-title">
-                Benefits of our <br>Premium Exam Support
+                Why Choose Our <br>AI Certification Support
             </h2>
             <p class="premium-benefits-subtitle">
-                Guaranteed first-time pass. Pay only after you see the results. Finish your IT Certification exam in no time.<br>
-                This isn't help. It's a cheat code for 100% success
+                Trusted by worldwide students and certification candidates with comprehensive exam preparation assistance
             </p>
             <div class="premium-benefits-grid">
                 <div class="premium-benefit-card">
-                    <div class="premium-benefit-icon"><i class="fas fa-check"></i></div>
-                    <h3>Guaranteed First-Time Pass</h3>
-                    <p>Pass your IT exams on the first attempt without the need to spend countless hours studying. We streamline your preparation to focus only on what matters most.</p>
+                    <div class="premium-benefit-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Proven Success</h3>
+                    <p>Trusted by WGU students and certification candidates. Building on our proven track record of helping students succeed in their certification journeys.</p>
+                </div>
+                <div class="premium-benefit-card">
+                    <div class="premium-benefit-icon"><i class="fas fa-book"></i></div>
+                    <h3>Expert Support</h3>
+                    <p>Comprehensive exam preparation assistance for industry-leading AI certification exams.</p>
                 </div>
                 <div class="premium-benefit-card">
                     <div class="premium-benefit-icon"><i class="fas fa-dollar-sign"></i></div>
@@ -200,14 +244,9 @@
                     <p>You pay only after you pass your exam, giving you peace of mind and a guarantee of success.</p>
                 </div>
                 <div class="premium-benefit-card">
-                    <div class="premium-benefit-icon"><i class="fas fa-users"></i></div>
-                    <h3>Pass Any Exam within 24H</h3>
-                    <p>We guarantee the completion of any Certification Exam within a day. This means less time studying, more time living!</p>
-                </div>
-                <div class="premium-benefit-card">
-                    <div class="premium-benefit-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Stress-Free Exam Process</h3>
-                    <p>Pick your preferred date, let our agent handle the setup, and just be ready on exam day. It’s that easy!</p>
+                    <div class="premium-benefit-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Industry-Leading Certifications</h3>
+                    <p>Comprehensive support for Microsoft AI, AWS AI, Google AI, ISACA AI, NVIDIA AI, ISTQB AI Testing, and PMI AI certifications.</p>
                 </div>
             </div>
         </div>
@@ -221,27 +260,48 @@
             <div class="logo-carousel">
                 <div class="logo-track">
                     <div class="logo-slide">
-                        <img src="images/logos/logo1.png" alt="ISACA Logo">
+                        <img src="images/logos/logo1.png" alt="MIcrosoft Logo">
                     </div>
                     <div class="logo-slide">
                         <img src="images/logos/logo2.png" alt="Project Management Institute Logo">
                     </div>
                     <div class="logo-slide">
-                        <img src="images/logos/logo3.png" alt="WGU Logo">
+                        <img src="images/logos/logo3.png" alt="AWS Logo">
                     </div>
                     <div class="logo-slide">
-                        <img src="images/logos/logo4.png" alt="CompTIA Logo">
+                        <img src="images/logos/logo4.png" alt="Google Logo">
                     </div>
                     <div class="logo-slide">
-                        <img src="images/logos/logo5.png" alt="Cisco Logo">
-                    </div>
-                    <!-- Duplicate slides for infinite scroll effect -->
-                    <div class="logo-slide">
-                        <img src="images/logos/logo6.png" alt="ISACA Logo">
+                        <img src="images/logos/logo5.png" alt="ISACA Logo">
                     </div>
                     <div class="logo-slide">
-                        <img src="images/logos/logo7.png" alt="Project Management Institute Logo">
-                    </div>                
+                        <img src="images/logos/logo6.png" alt="Project Management Institute Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo7.png" alt="Googlee Logo">
+                    </div>
+                    <!-- Duplicate slides for infinite scroll -->
+                    <div class="logo-slide">
+                        <img src="images/logos/logo1.png" alt="Microsoft Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo2.png" alt="Project Management Institute Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo3.png" alt="AWS Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo4.png" alt="Cisco Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo5.png" alt="ISACA Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo6.png" alt="Project Management Institute Logo">
+                    </div>
+                    <div class="logo-slide">
+                        <img src="images/logos/logo7.png" alt="Googlee Logo">
+                    </div>
                 </div>
             </div>
         </div>
@@ -290,8 +350,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"Networking used to be a mystery to me, but with their detailed CCNA guide and live exam support, I finally understood the concepts clearly. I cleared the exam confidently and am now working toward CCNP with their help again!"</p>
-                        <div class="course-tag">Cisco CCNA </div>
+                        <p class="testimonial-text">"Networking used to be a mystery to me, but with their detailed guide and live exam support, I finally understood the concepts clearly. I cleared the exam confidently and am now working toward exam with their help again!"</p>
+                        <div class="course-tag">AWS AI </div>
                     </div>
 
                     <div class="testimonial-card">
@@ -328,8 +388,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"Getting Security+ certified felt like a huge leap, but this platform made it achievable. From the free exam guide to real-time support during my prep, everything was streamlined. The practice tests were a game-changer!"</p>
-                        <div class="course-tag">CompTIA Security+</div>
+                        <p class="testimonial-text">"Getting AI certified felt like a huge leap, but this platform made it achievable. From the free exam guide to real-time support during my prep, everything was streamlined. The practice tests were a game-changer!"</p>
+                        <div class="course-tag">Microsoft Azure</div>
                     </div>
 
                     <div class="testimonial-card">
@@ -337,7 +397,7 @@
                             <img src="images/students/5.jpg" alt="David Thompson" class="student-image">
                             <div class="student-details">
                                 <h3>Eric T</h3>
-                                <p>Audit Associate</p>
+                                <p>Audit Associate</p>
                             </div>
                         </div>
                         <div class="rating">
@@ -350,6 +410,8 @@
                         <p class="testimonial-text">"CISA is one of the toughest certifications out there, but the structured exam support and free guide I received helped me stay focused and confident. I cleared it on my first attempt and have already referred two friends!"</p>
                         <div class="course-tag">ISACA CISA</div>
                     </div>
+
+                    
                 </div>
 
                 <button class="carousel-arrow prev">
@@ -367,32 +429,33 @@
         <div class="container">
             <h2 class="section-title text-center">Get Every Single Answer Here</h2>
             <p class="section-description text-center">
-            Find quick answers to all your common questions about our IT certification exams, study materials, and support services. Everything you need to know is right here!
+            Find quick answers to all your common questions about our AI certification exams, study materials, and support services. Everything you need to know is right here!
             </p>
 
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What is My IT Certs and how does it work?</h3>
+                        <h3>What is AI Exam Support and how does it work?</h3>
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>My IT Certs is your trusted support system for passing IT certification exams. We specialize in helping candidates succeed in certifications like CompTIA, Cisco, AWS, Microsoft, and more. Our experts provide focused, result-driven prep to ensure you pass your certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
+                        <p>AI Exam Support is your trusted support system for passing AI certification exams. We specialize in helping candidates succeed in industry-leading AI certifications like Microsoft Azure AI, AWS AI, Google AI, ISACA AI, NVIDIA AI, ISTQB AI Testing, and PMI AI certifications. Our experts provide focused, result-driven prep to ensure you pass your AI certification exams on the first attempt or you don't pay us a dime. You only pay once you successfully pass, making your success risk-free and guaranteed.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What are the benefits of getting our premium IT certification exam support?
+                        <h3>What are the benefits of getting our premium AI certification exam support?
                         </h3>
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">                    
                         <ul>
-                            <li>Guaranteed Exam Pass: Pass your IT certification exam on the first try with proven strategies and expert guidance.</li>
+                            <li>Proven Success: Trusted by WGU students and certification candidates with a track record of success.</li>
+                            <li>Expert Support: Comprehensive exam preparation assistance for all major AI certifications.</li>
+                            <li>Competitive Pricing: Fair and transparent pricing for all AI certification exams.</li>
                             <li>Pay After You Pass: You owe us nothing until you successfully pass your exam. </li>
-                            <li>Expert Coaching & Materials: Receive targeted support from IT-certified professionals.</li>
-                            <li>Accelerated Career Progress: Achieve your certification faster and start advancing your IT career sooner. </li>
+                            <li>Accelerated Career Progress: Achieve your AI certification faster and start advancing your career sooner. </li>
                         </ul>
                     </div>
                 </div>
@@ -403,7 +466,7 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>We've been in this business since 2017, supporting over 20 exams every single day. What sets us apart? You only pay after you pass your exam & no upfront fees, no risks. That’s our commitment and your guarantee.
+                        <p>We've been in this business since 2017, supporting over 20 exams every single day. What sets us apart? You only pay after you pass your exam & no upfront fees, no risks. That's our commitment and your guarantee.
                         </p>                      
                     </div>
                 </div>
@@ -414,16 +477,19 @@
                         <span class="toggle-icon">^</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Our pricing varies based on the certification exam and the level of support you need. Once you reach out to us, we'll assess your goals and give you a personalized quote. <strong>You only pay after you pass your exam,</strong> so there's zero financial risk involved in getting started with us.</p>
+                        <p>
+                        The cost of getting our AI exam support depends on the exam you choose and the level of assistance you need. Once you contact us, we will give you a quote based on your situation. Remember, you only pay us once you successfully pass your exam, so there is no risk involved in partnering with us.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="contact-support-wrapper text-center">
                 <p>Still have questions? We're here to help!</p>
-                <a href="contact.php" class="btn btn-primary">Contact support</a>
+                <a href="contact" class="btn btn-primary btn-shine">Contact support</a>
             </div>
         </div>
     </section>
+   
 
 <?php include 'includes/footer.php'; ?> 

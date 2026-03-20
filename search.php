@@ -51,7 +51,7 @@ if (!empty($searchQuery)) {
                     <div class="help-box">
                         <h3>Need Help?</h3>
                         <p>Our study experts are ready to assist you</p>
-                        <a href="contact.php" class="btn btn-primary">Contact support</a>
+                        <a href="contact" class="btn btn-primary">Contact support</a>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ if (!empty($searchQuery)) {
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>
-                <a href="contact.php" class="contact-support-btn">Contact Support</a>
+                <a href="contact" class="contact-support-btn">Contact Support</a>
             </div>
         </div>
     </section>
@@ -113,16 +113,20 @@ if (!empty($searchQuery)) {
                         <div class="exam-card">
                             <div class="exam-image">
                                 <img src="${exam.image || 'images/default-exam.jpg'}" alt="${exam.title}">
-                                <div class="exam-label">OA Questions</div>
+                                <div class="exam-label">Certification</div>
                             </div>
                             <div class="exam-content">
                                 <h3>${exam.title}</h3>
+                                ${exam.price ? `
+                                    <div class="exam-info-row">
+                                        <span class="exam-code">Price</span>
+                                        <span class="exam-price">${exam.price}</span>
+                                    </div>` : ''}
                                 <p>${exam.description}</p>
                                 <div class="exam-meta">
                                     <span class="category">${exam.category}</span>
-                                    <span class="class-code">${exam.class_code}</span>
                                 </div>
-                                <a href="blog.php" class="view-guide">View Exam Guide <i class="fas fa-arrow-right"></i></a>
+                                <a href="${exam.link}" class="view-guide" target="_blank">View Exam <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     `).join('');

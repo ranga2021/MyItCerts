@@ -6,167 +6,103 @@ ini_set('display_errors', 1);
 // Set content type to JSON
 header('Content-Type: application/json');
 
-// Sample exam data from exams.php
+// AI certification catalog (kept in sync with exams.php and aiexams.html)
 $exams = [
     [
-        'id' => 1,
-        'title' => 'WGU C952 – Computer Architecture OA',
-        'description' => '250 WGU C952 OA Questions and Answers – Pass the Exam in Less Than 1 Week! Are you getting prepared...',
-        'category' => 'Computer Science',
-        'class_code' => 'C952',
-        'image' => 'images/exams/c952.png'
+        'id' => 'ai-900',
+        'title' => 'Microsoft Certified: Azure AI Fundamentals (AI-900)',
+        'description' => 'Learn AI fundamentals with Microsoft Azure and build a responsible AI foundation.',
+        'category' => 'Microsoft AI',
+        'image' => 'images/blogs/AI900.png',
+        'link' => 'AI900'
     ],
     [
-        'id' => 2,
-        'title' => 'WGU C954 – Information Technology Management',
-        'description' => '250 WGU C954 OA Questions and Answers – Pass the Exam in Less Than 1 Week! Are you getting prepared...',
-        'category' => 'Computer Science',
-        'class_code' => 'C954',
-        'image' => 'images/exams/e1.png'
+        'id' => 'ai-102',
+        'title' => 'Microsoft Certified: Azure AI Engineer Associate (AI-102)',
+        'description' => 'Design and deploy Azure AI solutions with hands-on guidance.',
+        'category' => 'Microsoft AI',
+        'image' => 'images/blogs/AI102.png',
+        'link' => 'AI102.php'
     ],
     [
-        'id' => 3,
-        'title' => 'WGU C207 – Data-Driven Decision Making OA',
-        'description' => '250 WGU C207 OA Questions and Answers – Pass the Exam in Less Than 1 Week! Are you getting prepared...',
-        'category' => 'Business',
-        'class_code' => 'C207',
-        'image' => 'images/exams/e1.png'
+        'id' => 'aws-aif-c01',
+        'title' => 'AWS Certified AI Practitioner (AIF-C01)',
+        'description' => 'Validate foundational AI/ML knowledge with AWS services.',
+        'category' => 'AWS AI',
+        'image' => 'images/blogs/AIF-C01.png',
+        'link' => 'AIF-C01'
     ],
     [
-        'id' => 4,
-        'title' => 'WGU C211 – Global Economics for Managers',
-        'description' => 'Comprehensive study guide for Global Economics course',
-        'category' => 'Business',
-        'class_code' => 'C211',
-        'image' => 'images/exams/e1.png'
+        'id' => 'aws-gdp-c01',
+        'title' => 'AWS Certified Generative AI Developer - Professional (GDP-C01)',
+        'description' => 'Build production-ready generative AI apps on AWS.',
+        'category' => 'AWS AI',
+        'image' => 'images/blogs/GDP-C01.png',
+        'link' => 'GDP-C01'
     ],
     [
-        'id' => 5,
-        'title' => 'WGU C213 – WGU Accounting for Decision Makers',
-        'description' => 'Complete guide for Accounting course',
-        'category' => 'Business',
-        'class_code' => 'C213',
-        'image' => 'images/exams/e1.png'
+        'id' => 'google-genai',
+        'title' => 'Generative AI Leader (GenAI)',
+        'description' => 'Lead AI adoption and strategy with Google Cloud expertise.',
+        'category' => 'Google AI',
+        'image' => 'images/exams/google.png',
+        'link' => 'coming-soon'
     ],
     [
-        'id' => 6,
-        'title' => 'WGU C214 – Financial Management',
-        'description' => 'Study materials for Financial Management course',
-        'category' => 'Business',
-        'class_code' => 'C214',
-        'image' => 'images/exams/e1.png'
+        'id' => 'isaca-aaia',
+        'title' => 'ISACA Advanced in AI Audit (AAIA)',
+        'description' => 'Master AI governance, assurance, and audit readiness.',
+        'category' => 'ISACA AI',
+        'image' => 'images/blogs/AAIA.png',
+        'link' => 'AAIA'
     ],
     [
-        'id' => 7,
-        'title' => 'WGU C232 – Introduction to Human Resource Management',
-        'description' => 'HR Management course study guide',
-        'category' => 'Social Science',
-        'class_code' => 'C232',
-        'image' => 'images/exams/e1.png'
+        'id' => 'isaca-aaism',
+        'title' => 'ISACA Advanced in AI Security Management (AAISM)',
+        'description' => 'Build secure, governed AI programs with ISACA best practices.',
+        'category' => 'ISACA AI',
+        'image' => 'images/blogs/AAISM.png',
+        'link' => 'AAISM'
     ],
     [
-        'id' => 8,
-        'title' => 'WGU C233 – Employment Law OA',
-        'description' => 'Employment Law course materials',
-        'category' => 'Social Science',
-        'class_code' => 'C233',
-        'image' => 'images/exams/e1.png'
+        'id' => 'nvidia-genl',
+        'title' => 'NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL)',
+        'description' => 'Prove your mastery of LLM pipelines with NVIDIA.',
+        'category' => 'NVIDIA AI',
+        'image' => 'images/blogs/AI-LLMS.png',
+        'link' => 'AI-LLMS'
     ],
     [
-        'id' => 9,
-        'title' => 'WGU C234 – Workforce Planning: Recruitment and Selection OA',
-        'description' => 'Workforce Planning course guide',
-        'category' => 'Social Science',
-        'class_code' => 'C234',
-        'image' => 'images/exams/e1.png'
+        'id' => 'nvidia-aiio',
+        'title' => 'NCA-AIIO - NVIDIA-Certified Associate: AI Infrastructure and Operations',
+        'description' => 'Validate your expertise in AI infrastructure, data center management, and NVIDIA AI solutions.',
+        'category' => 'NVIDIA AI',
+        'image' => 'images/blogs/NCA-AIIO.png',
+        'link' => 'NCA-AIIO'
     ],
     [
-        'id' => 10,
-        'title' => 'WGU C236 – Compensation and Benefits OA',
-        'description' => 'Compensation and Benefits course materials',
-        'category' => 'Social Science',
-        'class_code' => 'C236',
-        'image' => 'images/exams/e1.png'
+        'id' => 'nvidia-genm',
+        'title' => 'NVIDIA-Certified Associate: Multimodal Generative AI (NCA-GENM)',
+        'description' => 'Demonstrate expertise in multimodal generative AI systems.',
+        'category' => 'NVIDIA AI',
+        'image' => 'images/exams/logo4.png',
+        'link' => 'coming-soon'
     ],
     [
-        'id' => 11,
-        'title' => 'WGU C237 – Taxation I',
-        'description' => 'Taxation course study guide',
-        'category' => 'Business',
-        'class_code' => 'C237',
-        'image' => 'images/exams/e1.png'
+        'id' => 'istqb-ctai',
+        'title' => 'ISTQB CT-AI - Certified Tester AI Testing',
+        'description' => 'Validate your expertise in testing AI-based systems with ISTQB.',
+        'category' => 'ISTQB AI Testing',
+        'image' => 'images/blogs/CT-AI.png',
+        'link' => 'CT-AI'
     ],
     [
-        'id' => 12,
-        'title' => 'WGU C238 – Taxation II',
-        'description' => 'Advanced Taxation course materials',
-        'category' => 'Business',
-        'class_code' => 'C238',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 13,
-        'title' => 'WGU C239 – Business Law',
-        'description' => 'Business Law course study guide',
-        'category' => 'Business',
-        'class_code' => 'C239',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 14,
-        'title' => 'WGU C240 – Business Ethics',
-        'description' => 'Business Ethics course materials',
-        'category' => 'Business',
-        'class_code' => 'C240',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 15,
-        'title' => 'WGU C241 – Business Strategy',
-        'description' => 'Business Strategy course guide',
-        'category' => 'Business',
-        'class_code' => 'C241',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 16,
-        'title' => 'WGU C242 – Business Communication',
-        'description' => 'Business Communication course materials',
-        'category' => 'Business',
-        'class_code' => 'C242',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 17,
-        'title' => 'WGU C243 – Business Statistics',
-        'description' => 'Business Statistics course study guide',
-        'category' => 'Math',
-        'class_code' => 'C243',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 18,
-        'title' => 'WGU C244 – Business Calculus',
-        'description' => 'Business Calculus course materials',
-        'category' => 'Math',
-        'class_code' => 'C244',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 19,
-        'title' => 'WGU C245 – Business Algebra',
-        'description' => 'Business Algebra course guide',
-        'category' => 'Math',
-        'class_code' => 'C245',
-        'image' => 'images/exams/e1.png'
-    ],
-    [
-        'id' => 20,
-        'title' => 'WGU C246 – Business Geometry',
-        'description' => 'Business Geometry course materials',
-        'category' => 'Math',
-        'class_code' => 'C246',
-        'image' => 'images/exams/e1.png'
+        'id' => 'pmi-cpmai',
+        'title' => 'PMI-CPMAI - PMI Certified Professional in Managing AI',
+        'description' => 'Lead AI programs and projects with the CPMAI methodology. Master AI project management.',
+        'category' => 'PMI AI',
+        'image' => 'images/blogs/PMI-CPMAI.png',
+        'link' => 'PMI-CPMAI'
     ]
 ];
 
@@ -185,8 +121,7 @@ try {
         return (
             stripos(strtolower($exam['title']), $query) !== false ||
             stripos(strtolower($exam['description']), $query) !== false ||
-            stripos(strtolower($exam['category']), $query) !== false ||
-            stripos(strtolower($exam['class_code']), $query) !== false
+            stripos(strtolower($exam['category']), $query) !== false
         );
     });
     
@@ -194,18 +129,12 @@ try {
     usort($results, function($a, $b) use ($query) {
         $aTitle = strtolower($a['title']);
         $bTitle = strtolower($b['title']);
-        $aClassCode = strtolower($a['class_code']);
-        $bClassCode = strtolower($b['class_code']);
         
-        // Exact class code match gets highest priority
-        if ($aClassCode === $query && $bClassCode !== $query) return -1;
-        if ($bClassCode === $query && $aClassCode !== $query) return 1;
-        
-        // Exact title match gets second priority
+        // Exact title match gets highest priority
         if ($aTitle === $query && $bTitle !== $query) return -1;
         if ($bTitle === $query && $aTitle !== $query) return 1;
         
-        // Starts with query gets third priority
+        // Starts with query gets second priority
         if (strpos($aTitle, $query) === 0 && strpos($bTitle, $query) !== 0) return -1;
         if (strpos($bTitle, $query) === 0 && strpos($aTitle, $query) !== 0) return 1;
         

@@ -1,40 +1,105 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Coming Soon Hero Section -->
-<section class="coming-soon-hero">
-    <div class="container">
-        <div class="coming-soon-content">
-            <h1>Coming Soon</h1>
-            <div class="coming-soon-badge">
-                <i class="fas fa-rocket"></i>
-                <span>We're Working on Something Amazing</span>
+<!-- Coming Soon Hero Banner Section -->
+<section class="contact-hero-banner">
+    <div class="container-fluid">
+        <h1 class="contact-hero-title">Coming Soon<span class="highlight"><br>We're Working on Something Amazing!</span></h1>
+        <p class="contact-hero-subtitle">We're working hard to bring you an enhanced platform for AI certification exam success.</p>
+        <div class="contact-hero-badges">
+            <span class="hero-badge success"><i class="fas fa-rocket"></i> New Features</span>
+            <span class="hero-badge support"><i class="fas fa-clock"></i> Coming Soon</span>
+            <span class="hero-badge pay"><i class="fas fa-sparkles"></i> Stay Tuned</span>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Connect for Instant Support Section -->
+<section class="quick-connect-section">
+    <div class="container-fluid">
+        <h2 class="quick-connect-title">Get in Touch</h2>
+        <p class="quick-connect-subtitle">Need immediate assistance with your AI certification? Contact us through your preferred platform</p>
+        <div class="quick-connect-grid">
+            <!-- Signal Card -->
+            <div class="quick-connect-card signal">
+                <div class="quick-connect-icon">
+                    <img src="images/signal.png" alt="Signal" style="width: 65px; height: auto; border-radius: 50%;">
+                </div>
+                <h3>Signal</h3>
+                <p>Get instant exam support</p>
+                <a href="https://signal.me/#eu/xUyrqfkB2Nn5zJupx2mft_zQnVdZtCBY3e-HSO7MG5ZyFCcqzMFEHaa6Fug1oysp" target="_blank" class="connect-link">Connect Now <i class="fas fa-arrow-right"></i></a>
             </div>
-            <p class="coming-soon-description">
-                We're working hard to bring you an enhanced platform for IT certification success. 
-                Get ready for a revolutionary way to prepare for your IT certifications.
-            </p>
             
-        
-
-            <!-- Newsletter Signup -->
-            <div class="newsletter-signup">
-                <h3>Get Notified When We Launch</h3>
-                <form id="notifyForm" class="notify-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Notify Me</button>
-                </form>
+            <!-- Telegram Card -->
+            <div class="quick-connect-card telegram">
+                <div class="quick-connect-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <h3>Telegram</h3>
+                <p>Chat with our exam support team</p>
+                <a href="https://telegram.me/collegeexceed" target="_blank" class="connect-link">Connect Now <i class="fas fa-arrow-right"></i></a>
             </div>
+            
+            <!-- WhatsApp Card -->
+            <div class="quick-connect-card whatsapp">
+                <div class="quick-connect-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Get instant exam support</p>
+                <a href="https://api.whatsapp.com/send/?phone=18077700499" target="_blank" class="connect-link">Connect Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <!-- Quick Connect -->
-            <div class="quick-connect">
-                <p>Need immediate assistance?</p>
-                <div class="connect-buttons">
-                    <a href="https://api.whatsapp.com/send/?phone=16464800499" class="btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://telegram.me/collegeexceed" class="btn btn-telegram">
-                        <i class="fab fa-telegram-plane"></i> Telegram
-                    </a>
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+    <div class="container-fluid">
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <p>For <b>non-urgent inquiries,</b> you can reach us using the contact form below. However, for faster exam support, we recommend using WhatsApp or Telegram above.</p>
+            <form id="contactForm" action="send_mail.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exam_vendor">Exam Vendor</label>
+                        <select id="exam_vendor" name="exam_vendor" required>
+                            <option value="">Select your Exam Vendor</option>
+                            <option value="Microsoft AI">Microsoft AI</option>
+                            <option value="AWS AI">AWS AI</option>
+                            <option value="Google AI">Google AI</option>
+                            <option value="ISACA AI">ISACA AI</option>
+                            <option value="NVIDIA AI">NVIDIA AI</option>
+                            <option value="ISTQB AI Testing">ISTQB AI Testing</option>
+                            <option value="PMI AI">PMI AI</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exam_name">Exam Name</label>
+                        <input type="text" id="exam_name" name="exam_name" required placeholder="e.g. AI-900: Microsoft Azure AI Fundamentals, etc.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <center><button type="submit" class="btn btn-primary">Send Message</button></center>
+            </form>
+            <!-- Success Message Box -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="message-content">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thanks for contacting us!</h3>
+                    <p>We are receiving a lot of emails every day, so we apologize for the possible delay. For better and fast reply please send us a <a href="https://api.whatsapp.com/send/?phone=18077700499" target="_blank" class="whatsapp-link">WhatsApp message</a>.</p>
                 </div>
             </div>
         </div>
@@ -42,273 +107,81 @@
 </section>
 
 <style>
-.coming-soon-hero {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+.success-message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
     text-align: center;
 }
 
-.coming-soon-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.coming-soon-content h1 {
-    font-size: 3.5rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.coming-soon-badge {
-    display: inline-flex;
+.success-message .message-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: #052d72;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-}
-
-.coming-soon-badge i {
-    margin-right: 10px;
-}
-
-.coming-soon-description {
-    font-size: 1.2rem;
-    color: #6c757d;
-    margin-bottom: 40px;
-}
-
-
-.newsletter-signup {
-    margin: 50px 0;
-}
-
-.newsletter-signup h3 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.notify-form {
-    display: flex;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.notify-form input {
-    flex: 1;
-    padding: 12px 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.quick-connect {
-    margin-top: 50px;
-}
-
-.quick-connect p {
-    color: #6c757d;
-    margin-bottom: 15px;
-}
-
-.connect-buttons {
-    display: flex;
     gap: 15px;
-    justify-content: center;
 }
 
-.btn-whatsapp {
-    background: #25D366;
-    color: white;
+.success-message .message-content i {
+    font-size: 3rem;
+    color: #28a745;
 }
 
-.btn-telegram {
-    background: #0088cc;
-    color: white;
+.success-message .message-content h3 {
+    color: #28a745;
+    margin: 0;
 }
 
-.btn-whatsapp:hover, .btn-telegram:hover {
-    opacity: 0.9;
-    color: white;
+.success-message .message-content p {
+    color: #666;
+    margin: 0;
 }
 
-@media (max-width: 768px) {
-    .coming-soon-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .countdown-timer {
-        flex-wrap: wrap;
-    }
-
-    .timer-item {
-        min-width: 80px;
-    }
-
-    .notify-form {
-        flex-direction: column;
-    }
-
-    .connect-buttons {
-        flex-direction: column;
-    }
+.success-message .whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* Add these styles to your existing CSS */
-.alert {
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.alert-success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-
-.alert-danger {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-}
-
-.alert i {
-    font-size: 1.2rem;
-}
-
-.notify-form button:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.fa-spinner {
-    animation: spin 1s linear infinite;
+.success-message .whatsapp-link:hover {
+    text-decoration: underline;
 }
 </style>
 
 <script>
-// Set the launch date (adjust as needed)
-const launchDate = new Date('2024-12-31T00:00:00').getTime();
-
-// Update the countdown every second
-const countdown = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = launchDate - now;
-
-    // Calculate time units
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Update the countdown display
-    document.getElementById('days').textContent = String(days).padStart(2, '0');
-    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-
-    // If the countdown is finished
-    if (distance < 0) {
-        clearInterval(countdown);
-        document.querySelector('.countdown-timer').innerHTML = "We're Live!";
-    }
-}, 1000);
-
-// Handle newsletter signup
-document.getElementById('notifyForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get the email input
-    const emailInput = this.querySelector('input[type="email"]');
-    const email = emailInput.value;
-    
-    // Disable the form while submitting
+    const formData = new FormData(this);
     const submitButton = this.querySelector('button[type="submit"]');
-    submitButton.disabled = true;
-    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+    const originalText = submitButton.textContent;
     
-    // Send the AJAX request
-    fetch('newsletter_signup.php', {
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    
+    fetch('send_mail.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: 'email=' + encodeURIComponent(email)
+        body: formData
     })
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Show success message
-            const successMessage = document.createElement('div');
-            successMessage.className = 'alert alert-success';
-            successMessage.innerHTML = `
-                <i class="fas fa-check-circle"></i>
-                ${data.message}
-            `;
-            
-            // Insert success message after the form
-            this.parentNode.insertBefore(successMessage, this.nextSibling);
-            
-            // Reset the form
+            document.getElementById('successMessage').style.display = 'block';
             this.reset();
-            
-            // Remove success message after 5 seconds
-            setTimeout(() => {
-                successMessage.remove();
-            }, 5000);
+            window.scrollTo({ top: document.getElementById('successMessage').offsetTop - 100, behavior: 'smooth' });
         } else {
-            // Show error message
-            const errorMessage = document.createElement('div');
-            errorMessage.className = 'alert alert-danger';
-            errorMessage.innerHTML = `
-                <i class="fas fa-exclamation-circle"></i>
-                ${data.message}
-            `;
-            
-            // Insert error message after the form
-            this.parentNode.insertBefore(errorMessage, this.nextSibling);
-            
-            // Remove error message after 5 seconds
-            setTimeout(() => {
-                errorMessage.remove();
-            }, 5000);
+            alert(data.message || 'There was an error sending your message. Please try again.');
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        // Show error message
-        const errorMessage = document.createElement('div');
-        errorMessage.className = 'alert alert-danger';
-        errorMessage.innerHTML = `
-            <i class="fas fa-exclamation-circle"></i>
-            There was an error processing your request. Please try again.
-        `;
-        
-        // Insert error message after the form
-        this.parentNode.insertBefore(errorMessage, this.nextSibling);
-        
-        // Remove error message after 5 seconds
-        setTimeout(() => {
-            errorMessage.remove();
-        }, 5000);
+        alert('There was an error sending your message. Please try again.');
     })
     .finally(() => {
-        // Re-enable the form
         submitButton.disabled = false;
-        submitButton.innerHTML = 'Notify Me';
+        submitButton.textContent = originalText;
     });
 });
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php include 'includes/footer.php'; ?>

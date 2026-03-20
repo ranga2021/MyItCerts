@@ -49,12 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Save the new subscriber
     if (file_put_contents($subscribers_file, $data, FILE_APPEND)) {
         // Send notification email to admin
-        $to = 'brmcooray@gmail.com';
+        $to = 'contact@collegeexceed.com';
         $subject = 'New Newsletter Subscription';
         $message = "A new user has subscribed to the newsletter:\n\n";
         $message .= "Email: " . $email . "\n";
         $message .= "Time: " . $timestamp . "\n";
-        $headers = 'From: My IT Certs <noreply@myitcerts.com>' . "\r\n";
+        $headers = 'From: AI Exam Support <noreply@myitcerts.com>' . "\r\n";
         
         // Send the notification email
         mail($to, $subject, $message, $headers);

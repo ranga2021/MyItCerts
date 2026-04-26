@@ -59,7 +59,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© Copyright 2025. All Rights Reserved by AI Exam Support.</p>
+                <p>© Copyright 2026. All Rights Reserved by AI Exam Support.</p>
             </div>
         </div>
     </footer>

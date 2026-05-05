@@ -98,7 +98,7 @@
 
             <section>
                 <h3>Contact Us</h3>
-                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a href="contact.php">contact us</a>.</p>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to <a href="/contact">contact us</a>.</p>
             </section>
         </div>
     </div>

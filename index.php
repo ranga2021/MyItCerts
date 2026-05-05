@@ -73,13 +73,13 @@
                     <div class="help-box">
                         <h4>Need Help?</h4>
                         <p>Our study experts are ready to assist you</p>
-                        <a href="contact" class="contact-support-btn">Contact Support</a>
+                        <a href="/contact" class="contact-support-btn">Contact Support</a>
                     </div>
                 </div>
 
                 <div class="courses-grid">
                     <!-- Microsoft AI Certifications -->
-                    <a href="AI900" class="course-card-link">
+                    <a href="/AI900" class="course-card-link">
                         <div class="course-card" data-category="Microsoft AI">
                             <h4>AI-900 - Microsoft Certified: Azure AI Fundamentals</h4>
                             <div class="exam-info-row">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="AI102.php" class="course-card-link">
+                    <a href="/AI102" class="course-card-link">
                         <div class="course-card" data-category="Microsoft AI">
                             <h4>AI-102 - Microsoft Certified: Azure AI Engineer Associate</h4>
                             <div class="exam-info-row">
@@ -97,7 +97,7 @@
                     </a>
                     
                      <!-- ISACA AI Certifications -->
-                     <a href="AAIA" class="course-card-link">
+                     <a href="/AAIA" class="course-card-link">
                         <div class="course-card" data-category="ISACA AI">
                             <h4>AAIA - ISACA Advanced in AI Audit</h4>
                             <div class="exam-info-row">
@@ -106,7 +106,7 @@
                         </div>
                     </a>
                     <!-- AWS AI Certifications -->
-                    <a href="AIF-C01" class="course-card-link">
+                    <a href="/AIF-C01" class="course-card-link">
                         <div class="course-card" data-category="AWS AI">
                             <h4>AIF-C01 - AWS Certified AI Practitioner</h4>
                             <div class="exam-info-row">
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="GDP-C01" class="course-card-link">
+                    <a href="/GDP-C01" class="course-card-link">
                         <div class="course-card" data-category="AWS AI">
                             <h4>GDP-C01 - AWS Certified Generative AI Developer - Professional</h4>
                             <div class="exam-info-row">
@@ -124,7 +124,7 @@
                     </a>
                     
                     <!-- Google AI Certification -->
-                    <a href="coming-soon" class="course-card-link">
+                    <a href="/coming-soon" class="course-card-link">
                         <div class="course-card" data-category="Google AI">
                             <h4>GenAI - Generative AI Leader</h4>
                             <div class="exam-info-row">
@@ -134,7 +134,7 @@
                     </a>
                     
                    
-                    <a href="AAISM" class="course-card-link">
+                    <a href="/AAISM" class="course-card-link">
                         <div class="course-card" data-category="ISACA AI">
                             <h4>AAISM - ISACA Advanced in AI Security Management</h4>
                             <div class="exam-info-row">
@@ -144,7 +144,7 @@
                     </a>
                     
                     <!-- NVIDIA AI Certifications -->
-                    <a href="AI-LLMS" class="course-card-link">
+                    <a href="/AI-LLMS" class="course-card-link">
                         <div class="course-card" data-category="NVIDIA AI">
                             <h4>NCA-GENL - NVIDIA-Certified Associate: Generative AI LLMs</h4>
                             <div class="exam-info-row">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="NCA-AIIO" class="course-card-link">
+                    <a href="/NCA-AIIO" class="course-card-link">
                         <div class="course-card" data-category="NVIDIA AI">
                             <h4>NCA-AIIO - NVIDIA-Certified Associate: AI Infrastructure and Operations</h4>
                             <div class="exam-info-row">
@@ -160,7 +160,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="coming-soon" class="course-card-link">
+                    <a href="/coming-soon" class="course-card-link">
                         <div class="course-card" data-category="NVIDIA AI">
                             <h4>NCA-GENM - NVIDIA-Certified Associate: Multimodal Generative AI</h4>
                             <div class="exam-info-row">
@@ -170,7 +170,7 @@
                     </a>
                     
                     <!-- ISTQB AI Testing -->
-                    <a href="CT-AI" class="course-card-link">
+                    <a href="/CT-AI" class="course-card-link">
                         <div class="course-card" data-category="ISTQB AI Testing">
                             <h4>CT-AI - ISTQB Certified Tester AI Testing</h4>
                             <div class="exam-info-row">
@@ -180,7 +180,7 @@
                     </a>
                     
                     <!-- PMI AI Certification -->
-                    <a href="PMI-CPMAI" class="course-card-link">
+                    <a href="/PMI-CPMAI" class="course-card-link">
                         <div class="course-card" data-category="PMI AI">
                             <h4>PMI-CPMAI - PMI Certified Professional in Managing AI</h4>
                             <div class="exam-info-row">
@@ -193,7 +193,7 @@
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>
-                <a href="contact" class="contact-support-btn">Contact Support</a>
+                <a href="/contact" class="contact-support-btn">Contact Support</a>
             </div>
         </div>
     </section>
@@ -207,8 +207,8 @@
                     <h2>Pass Your AI Exams on First Attempt</h2>
                     <p>Building on our proven track record of helping WGU students and certification candidates succeed, we're excited to announce comprehensive support for industry-leading AI certification exams! We specialize in Microsoft AI, AWS AI, Google AI, ISACA AI, NVIDIA AI, ISTQB AI Testing, and PMI AI certifications with expert support and competitive pricing.</p>
                     <div class="about-buttons">
-                        <a href="about" class="btn btn-primary">About us</a>
-                        <a href="exams" class="btn btn-outline">View AI Certifications</a>
+                        <a href="/about" class="btn btn-primary">About us</a>
+                        <a href="/exams" class="btn btn-outline">View AI Certifications</a>
                     </div>
                 </div>
                 <div class="about-image">
@@ -486,7 +486,7 @@
 
             <div class="contact-support-wrapper text-center">
                 <p>Still have questions? We're here to help!</p>
-                <a href="contact" class="btn btn-primary btn-shine">Contact support</a>
+                <a href="/contact" class="btn btn-primary btn-shine">Contact support</a>
             </div>
         </div>
     </section>

@@ -24,7 +24,7 @@
                 </div>
                 <div class="button-group">
                     <a href="#questions" class="btn btn-important">Browse 250+ AIF-C01 Questions</a>
-                    <a href="contact" class="btn btn-secondary">Click for exam support</a>
+                    <a href="/contact" class="btn btn-secondary">Click for exam support</a>
                 </div>
             </div>
             <div class="image-content">
@@ -117,7 +117,7 @@
     <p class="oa-waterfall-subtitle">
       Assess your knowledge and experience the exam format before taking the actual test
     </p>
-    <a href="contact" class="oa-waterfall-btn">Click here for exam support</a>
+    <a href="/contact" class="oa-waterfall-btn">Click here for exam support</a>
     <div class="oa-waterfall-imagebox">
       <img src="images/blogs/AIF-C01-mid.png" alt="AWS Certified AI Practitioner" class="oa-waterfall-image">
     </div>
@@ -281,7 +281,7 @@
     <p class="examhelp-wgu-subtitle">
       If this exam is giving you a hard time, let us be your helping hand. Contact us, and we'll provide the assistance you need to pass and move forward.
     </p>
-    <a href="contact" class="examhelp-wgu-btn">Click here for exam support</a>
+    <a href="/contact" class="examhelp-wgu-btn">Click here for exam support</a>
     <div class="examhelp-wgu-imagebox">
       <img src="images/blogs/footer.jpg" alt="Complete your degree program in 6 months" class="examhelp-wgu-image">
     </div>

@@ -73,7 +73,7 @@
                     <div class="help-box">
                         <h3>Need Help?</h3>
                         <p>Our study experts are ready to assist you</p>
-                        <a href="contact" class="btn btn-primary btn-shine">Contact support</a>
+                        <a href="/contact" class="btn btn-primary btn-shine">Contact support</a>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@
                         <div class="exam-content">
                             <h3>ISACA Advanced in AI Audit (AAIA)</h3>
                             <p>Master AI auditing and control with our study materials. Prepare for your ISACA AI certification with confidence.</p>
-                            <a href="AAIA" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AAIA" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <!-- Microsoft AI Certifications -->
@@ -101,7 +101,7 @@
                         <div class="exam-content">
                             <h3>Microsoft Certified: Azure AI Fundamentals</h3>
                             <p>Learn AI fundamentals with our Azure AI study materials. Start your AI journey with Microsoft certification.</p>
-                            <a href="AI900" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AI900" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="exam-card" data-category="Microsoft AI">
@@ -112,7 +112,7 @@
                         <div class="exam-content">
                             <h3>Microsoft Certified: Azure AI Engineer Associate</h3>
                             <p>Master Azure AI services and solutions. Prepare for your Microsoft Azure AI certification with our expert study materials.</p>
-                            <a href="AI102.php" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AI102" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -125,7 +125,7 @@
                         <div class="exam-content">
                             <h3>AWS Certified AI Practitioner (AIF-C01)</h3>
                             <p>Demonstrate foundational knowledge of AI/ML concepts and AWS AI services for business solutions.</p>
-                            <a href="AIF-C01" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AIF-C01" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="exam-card" data-category="AWS AI">
@@ -136,7 +136,7 @@
                         <div class="exam-content">
                             <h3>AWS Certified Generative AI Developer - Professional (GDP-C01)</h3>
                             <p>Build production-ready generative AI applications on AWS. Master advanced generative AI development, model fine-tuning, and deployment strategies.</p>
-                            <a href="GDP-C01" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/GDP-C01" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -149,7 +149,7 @@
                         <div class="exam-content">
                             <h3>Generative AI Leader</h3>
                             <p>Master Google Cloud Platform with our study materials. Prepare for your Google AI certification.</p>
-                            <a href="coming-soon" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/coming-soon" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -162,7 +162,7 @@
                         <div class="exam-content">
                             <h3>ISACA Advanced in AI Security Management (AAISM)</h3>
                             <p>Master information security management for AI systems. Prepare for your ISACA AI certification.</p>
-                            <a href="AAISM" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AAISM" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -175,7 +175,7 @@
                         <div class="exam-content">
                             <h3>NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL)</h3>
                             <p>Master large language models and generative AI pipelines with NVIDIA. Build, deploy, and optimize LLM applications using NVIDIA's AI platform.</p>
-                            <a href="AI-LLMS" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/AI-LLMS" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="exam-card" data-category="NVIDIA AI">
@@ -186,7 +186,7 @@
                         <div class="exam-content">
                             <h3>NCA-AIIO - NVIDIA-Certified Associate: AI Infrastructure and Operations</h3>
                             <p>Validate your expertise in AI infrastructure and operations. Master GPU-accelerated infrastructure, data center management, and NVIDIA AI solutions.</p>
-                            <a href="NCA-AIIO" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/NCA-AIIO" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="exam-card" data-category="NVIDIA AI">
@@ -197,7 +197,7 @@
                         <div class="exam-content">
                             <h3>NVIDIA-Certified Associate: Multimodal Generative AI</h3>
                             <p>Master multimodal generative AI with NVIDIA. Prepare for your NVIDIA certification.</p>
-                            <a href="coming-soon" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/coming-soon" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -210,7 +210,7 @@
                         <div class="exam-content">
                             <h3>ISTQB CT-AI - Certified Tester AI Testing</h3>
                             <p>Validate your expertise in testing AI-based systems. Master AI testing methodologies and prepare for your ISTQB CT-AI certification.</p>
-                            <a href="CT-AI" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/CT-AI" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -223,7 +223,7 @@
                         <div class="exam-content">
                             <h3>PMI-CPMAI - PMI Certified Professional in Managing AI</h3>
                             <p>Lead AI programs and projects with the CPMAI methodology. Master AI project management from business understanding through operationalization.</p>
-                            <a href="PMI-CPMAI" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
+                            <a href="/PMI-CPMAI" class="view-guide">View Exam <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -244,7 +244,7 @@
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>
-                <a href="contact" class="contact-support-btn">Contact Support</a>
+                <a href="/contact" class="contact-support-btn">Contact Support</a>
             </div>
         </div>
     </section>

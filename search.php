@@ -51,7 +51,7 @@ if (!empty($searchQuery)) {
                     <div class="help-box">
                         <h3>Need Help?</h3>
                         <p>Our study experts are ready to assist you</p>
-                        <a href="contact" class="btn btn-primary">Contact support</a>
+                        <a href="/contact" class="btn btn-primary">Contact support</a>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ if (!empty($searchQuery)) {
             <div class="help-box-mobile">
                 <h4>Need Help?</h4>
                 <p>Our study experts are ready to assist you</p>
-                <a href="contact" class="contact-support-btn">Contact Support</a>
+                <a href="/contact" class="contact-support-btn">Contact Support</a>
             </div>
         </div>
     </section>

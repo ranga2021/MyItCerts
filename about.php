@@ -9,8 +9,8 @@
                     <h2>Pass Your AI Exams on First Attempt</h2>
                     <p>Building on our proven track record of helping WGU students and certification candidates succeed, we're excited to announce comprehensive support for industry-leading AI certification exams! We specialize in Microsoft AI, AWS AI, Google AI, ISACA AI, NVIDIA AI, ISTQB AI Testing, and PMI AI certifications with expert support and competitive pricing.</p>
                     <div class="about-buttons2">
-                        <a href="contact" class="btn btn-primary">Contact Support</a>
-                        <a href="exams" class="btn btn-outline">View AI Certifications</a>
+                        <a href="/contact" class="btn btn-primary">Contact Support</a>
+                        <a href="/exams" class="btn btn-outline">View AI Certifications</a>
                     </div>
                 </div>
                 <div class="about-image2">
@@ -78,7 +78,7 @@
                     </div>
                     <h3>Study Guides</h3>
                     <p>Expert guidance and resources to help you complete your exams efficiently and effectively.</p>
-                    <a href="exams" class="offer-link" target="_blank">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
+                    <a href="/exams" class="offer-link" target="_blank">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="offer-card">
@@ -87,7 +87,7 @@
                     </div>
                     <h3>Practice Questions and Answers</h3>
                     <p>We provide practice questions and answers covering every aspect of your AI Certification exam.</p>
-                    <a href="exams" target="_blank" class="offer-link">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
+                    <a href="/exams" target="_blank" class="offer-link">VIEW ALL EXAMS <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="offer-card">
@@ -96,7 +96,7 @@
                     </div>
                     <h3>Exam Support and Guidance</h3>
                     <p>Personalized support to help you prepare and pass your exams with confidence.</p>
-                    <a href="contact" target="_blank" class="offer-link">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" target="_blank" class="offer-link">CONTACT US <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -173,7 +173,7 @@
 
             <div class="contact-support-wrapper text-center">
                 <p>Still have questions? We're here to help!</p>
-                <a href="contact" class="btn btn-primary btn-shine">Contact support</a>
+                <a href="/contact" class="btn btn-primary btn-shine">Contact support</a>
             </div>
         </div>
     </section>

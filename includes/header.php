@@ -75,7 +75,7 @@
     <div class="top-banner">
         <div class="container-fluid">
             <i class="fas fa-graduation-cap"></i>
-            Pass Any AI Certification Exam Now & Pay After You Pass.  &nbsp<a href="contact" class="btn-important" style="text-decoration:none; padding: 3px 6px; border-radius:5px;">Contact Us!</a>
+            Pass Any AI Certification Exam Now & Pay After You Pass.  &nbsp<a href="/contact" class="btn-important" style="text-decoration:none; padding: 3px 6px; border-radius:5px;">Contact Us!</a>
         </div>
     </div>
 
@@ -83,7 +83,7 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="logo">
-                <a href="index">
+                <a href="/index">
                     <img src="images/Logo.png" alt="OA Exams Logo">
                 </a>
             </div>
@@ -92,28 +92,28 @@
                 <i class="fas fa-times" style="display: none;"></i>
             </button>
             <div class="nav-links">
-                <a href="index">Home</a>
-                <a href="about">About Us</a>
-                <a href="exams">View all Exams</a>
-                <a href="coming-soon">Video Lessons</a>
+                <a href="/index">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/exams">View all Exams</a>
+                <a href="/coming-soon">Video Lessons</a>
                 <div class="mobile-only">
                     <div class="social-links">
                         <a href="https://api.whatsapp.com/send/?phone=18077700499" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://telegram.me/collegeexceed" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="coming-soon" class="facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="coming-soon" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="/coming-soon" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="/coming-soon" class="instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://signal.me/#eu/xUyrqfkB2Nn5zJupx2mft_zQnVdZtCBY3e-HSO7MG5ZyFCcqzMFEHaa6Fug1oysp" target="_blank" class="signal"><img src="images/favicon_io/signal.ico" alt="Signal" style="width: 25px; height: 25px;"></a>
                     </div>
-                    <a href="contact" class="contact-btn">Contact us <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" class="contact-btn">Contact us <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="social-links">
                 <a href="https://api.whatsapp.com/send/?phone=18077700499" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://telegram.me/collegeexceed" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
-                <a href="coming-soon" class="facebook"><i class="fab fa-facebook"></i></a>
-                <a href="coming-soon" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="/coming-soon" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="/coming-soon" class="instagram"><i class="fab fa-instagram"></i></a>
                 <a href="https://signal.me/#eu/xUyrqfkB2Nn5zJupx2mft_zQnVdZtCBY3e-HSO7MG5ZyFCcqzMFEHaa6Fug1oysp" target="_blank" class="signal"><img src="images/favicon_io/signal.ico" alt="Signal" style="width: 20px; height: 20px;"></a>
-                <a href="contact" class="contact-btn">Contact us <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="contact-btn">Contact us <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </nav>
